@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 font-bold p-4 bg-slate-500">
+    <header className="fixed top-0 left-0 right-0 font-bold p-4 bg-zinc-800 shadow-lg shadow-zinc-500/20">
       <div className="flex justify-between items-center">
         <div>
           <h2>

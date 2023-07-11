@@ -26,7 +26,7 @@ function Contact() {
       return (
         <div
           key={key}
-          className="flex justify-center items-center p-4 sm:w-1/2 md:w-1/4 sm:mx-2 md:mx-4 border-solid border-2 border-s border-gray-500"
+          className="flex justify-center items-center p-4 my-4 md:mx-4 sm:w-1/2 md:w-1/3 lg:w-1/4 bg-zinc-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ function Contact() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nulla
         expedita minima officia? Unde, doloremque velit.
       </p>
-      <div className="flex justify-center items-center">{Contacts()}</div>
+      <div className="sm:flex justify-center items-center">{Contacts()}</div>
     </div>
   );
 }
