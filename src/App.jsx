@@ -6,12 +6,12 @@ import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Hero />
       <Portfolio />
       <Contact />
-    </div>
+    </>
   );
 }
 
