@@ -1,0 +1,5 @@
+export { default as BeMightyCloneImage } from './BeMightyClone.jpg'
+export { default as LemingCorporateLawImage } from './LemingCorporateLaw.jpg'
+export { default as DuelistImage } from './Duelist.jpg'
+export { default as FurnitureImage } from './Furniture.jpg'
+export { default as ProfileImage } from './profile.png'

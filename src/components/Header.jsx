@@ -1,9 +1,11 @@
 function Header() {
   return (
-    <header className="fixed inset-0 font-bold p-4">
+    <header className="fixed top-0 left-0 right-0 font-bold p-4 bg-slate-500">
       <div className="flex justify-between items-center">
         <div>
-          <h2>JLT</h2>
+          <h2>
+            JLT<span className="text-yellow-500">.</span>
+          </h2>
         </div>
         <nav className="flex justify-between items-center">
           <a href="">
