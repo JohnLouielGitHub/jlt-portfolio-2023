@@ -124,40 +124,44 @@ function Portfolio() {
   const Project = () => {
     return projects.map((project, key) => {
       return (
-        <div className="mb-8 last-of-type:mb-0 md:last-of-type:mb-8" key={key}>
-          <img
-            src={
-              project.preview ??
-              "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            }
-            alt="project preview"
-            className="w-full mb-4 h-full object-cover duration-500"
-          />
-          <h3 className="mb-4 font-bold">{project.title}</h3>
-          <a
-            href={project.link}
-            target="_blank"
-            className="text-yellow-500 font-semibold"
-            rel="noreferrer"
-          >
-            Visit
-          </a>
+        <div key={key}>
+          <div className="text-center">
+            <img
+              src={
+                project.preview ??
+                "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              }
+              alt="project preview"
+              className="mb-4 w-full h-60 object-cover duration-500"
+            />
+            <h3 className="mb-4 font-bold">{project.title}</h3>
+            <a
+              href={project.link}
+              target="_blank"
+              className="text-yellow-500 font-semibold"
+              rel="noreferrer"
+            >
+              Visit
+            </a>
+          </div>
         </div>
       );
     });
   };
 
   return (
-    <div className="bg-zinc-700 p-4 mb-20 lg:px-32 xl:px-40">
-      <h2 className="text-center text-yellow-500 font-bold mb-4">PORTFOLIO</h2>
-      <p className="mb-4 text-center">
-        Check out my diverse range of projects that showcase my front-end
-        development skills. From responsive websites to interactive web
-        applications, each project represents my commitment to creating
-        compelling user interfaces with clean code. Browse through the examples
-        to get a glimpse of my creativity and attention to detail
+    <div className="bg-zinc-700 py-12 px-4 mb-20 lg:mb-0 lg:px-20 xl:px-40">
+      <p className="text-center text-yellow-500 font-extrabold mb-4 lg:text-lg">
+        PORTFOLIO
       </p>
-      <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-4 lg:hidden">
+      <h2 className="text-center text-2xl lg:text-3xl font-semibold my-4">
+        MY PROJECT COLLECTION
+      </h2>
+      <p className="mb-4 lg:text-center">
+        Check out my diverse range of projects that showcase my front-end
+        development skills.
+      </p>
+      <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8 md:auto-cols-auto lg:hidden">
         {Project()}
       </div>
       <div className="group h-max flex justify-center">{StaticCarousel()}</div>

@@ -46,18 +46,21 @@ function Contact() {
   };
   return (
     <>
-      <div className="text-center lg:px-32 xl:px-40">
-        <h3 className="text-yellow-500 font-bold">CONTACT US</h3>
-        <h2 className="font-bold">Ways To Contact Me</h2>
-        <p>
+      <div className="px-4 py-12 lg:px-20 xl:px-40">
+        <p className="text-center text-yellow-500 font-extrabold mb-4 lg:text-lg">
+          CONTACT US
+        </p>
+        <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-4">
+          Ways To Contact Me
+        </h2>
+        <p className="lg:text-center mb-4">
           Ready to start a project together or have any inquiries? Feel free to
-          reach out to me! Whether it&#39;s discussing a potential collaboration
-          or just saying hello, I&#39;m always excited to connect with fellow
-          professionals. Let&#39;s get in touch and explore how we can bring
+          reach out to me! Let&#39;s get in touch and explore how we can bring
           your ideas to life.
         </p>
         <div className="sm:flex justify-center items-center">{Contacts()}</div>
       </div>
+      {/* FOOTER */}
       <div className="border-t-2 border-solid border-yellow-500 text-center p-2 md:p-4 font-bold">
         &#169; Copyright - JLT | All Rights Reserve
       </div>
