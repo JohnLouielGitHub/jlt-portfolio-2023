@@ -5,3 +5,9 @@
 body {
   @apply bg-zinc-900 text-white;
 }
+
+.slide-animation {
+  @apply h-full brightness-75 object-cover;
+  transition-duration: 500ms !important;
+  transition-timing-function: linear !important;
+}
