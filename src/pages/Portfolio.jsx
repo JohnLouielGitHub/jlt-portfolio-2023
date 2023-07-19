@@ -105,7 +105,7 @@ function Portfolio() {
         leftControl={leftButton}
         rightControl={rightButton}
         slide={false}
-        className="hidden lg:block h-560 w-5/6"
+        className="hidden h-560 w-5/6"
       >
         {projects.map((project, key) => {
           return (
@@ -125,23 +125,25 @@ function Portfolio() {
     return projects.map((project, key) => {
       return (
         <div key={key}>
-          <div className="text-center">
+          <div className="text-center flex flex-col justify-center items-center">
             <img
               src={
                 project.preview ??
                 "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               }
               alt="project preview"
-              className="mb-4 w-full h-60 object-cover duration-500"
+              className="mb-4 w-full h-60 xl:h-80 object-cover duration-500"
             />
             <h3 className="mb-4 font-bold">{project.title}</h3>
             <a
               href={project.link}
               target="_blank"
-              className="text-yellow-500 font-semibold"
               rel="noreferrer"
+              className=""
             >
-              Visit
+              <div className="text-yellow-500 font-medium border-solid border-2 border-yellow-500 w-max px-2 hover:bg-yellow-500 hover:text-white hover:scale-125 transition duration-300 ">
+                Visit
+              </div>
             </a>
           </div>
         </div>
@@ -150,18 +152,18 @@ function Portfolio() {
   };
 
   return (
-    <div className="bg-zinc-700 py-12 px-4 mb-20 lg:mb-0 lg:px-20 xl:px-40">
+    <div className="bg-zinc-700 py-12 px-4 lg:px-20 xl:px-40" id="portfolio">
       <p className="text-center text-yellow-500 font-extrabold mb-4 lg:text-lg">
         PORTFOLIO
       </p>
       <h2 className="text-center text-2xl lg:text-3xl font-semibold my-4">
         MY PROJECT COLLECTION
       </h2>
-      <p className="mb-4 lg:text-center">
+      <p className="mb-4 md:text-center">
         Check out my diverse range of projects that showcase my front-end
         development skills.
       </p>
-      <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8 md:auto-cols-auto lg:hidden">
+      <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-8 md:auto-cols-auto lg:grid-cols-2 lg:grid-rows-2 lg:gap-4">
         {Project()}
       </div>
       <div className="group h-max flex justify-center">{StaticCarousel()}</div>
