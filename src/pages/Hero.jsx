@@ -14,7 +14,7 @@ function Hero() {
           className="m-0 object-cover w-full h-full lg:h-4/6"
         />
       </div>
-      <div className="text-center md:text-left my-4 md:m-0 md:flex md:flex-col md:justify-center md:items-start md:col-start-1 md:row-start-1 lg:order-1 lg:w-1/3 lg:text-left lg:block">
+      <div className="text-center md:text-left my-4 flex flex-col justify-center items-center md:m-0 md:flex md:items-start md:col-start-1 md:row-start-1 lg:order-1 lg:w-1/3 lg:text-left lg:block">
         <h1 className="my-4 text-4xl lg:text-5xl font-bold">
           JOHN LOUIEL TAMARGO
           <span className="text-yellow-500 text-4xl font-bold">.</span>
