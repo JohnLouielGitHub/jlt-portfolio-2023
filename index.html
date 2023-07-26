@@ -4,8 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JLT. Portfolio</title>
-    <script type="module" crossorigin src="/jlt-portfolio-2023/assets/index-e56da978.js"></script>
-    <link rel="stylesheet" href="/jlt-portfolio-2023/assets/index-ba31ded7.css">
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      localStorage.theme = "light";
+      localStorage.theme = "dark";
+      localStorage.removeItem("theme");
+    </script>
+    <script type="module" crossorigin src="/jlt-portfolio-2023/assets/index-8583d805.js"></script>
+    <link rel="stylesheet" href="/jlt-portfolio-2023/assets/index-21a2cdda.css">
   </head>
   <body>
     <div id="root"></div>
