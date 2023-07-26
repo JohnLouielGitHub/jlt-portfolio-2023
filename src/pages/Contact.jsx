@@ -26,7 +26,7 @@ function Contact() {
       return (
         <div
           key={key}
-          className="flex justify-center items-center p-4 my-4 mx-auto w-full md:mx-4 sm:w-1/2 xl:w-1/4 bg-zinc-800"
+          className="text-center flex items-center justify-center p-4 mx-auto w-full md:mx-4 sm:w-max bg-gray-100 dark:bg-zinc-800 mb-4 last-of-type:mb-0 md:mb-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,11 +34,10 @@ function Contact() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6 mr-4"
+            className="w-6 h-6 mr-2"
           >
             {item.icon}
           </svg>
-
           {item.contact}
         </div>
       );
@@ -47,12 +46,8 @@ function Contact() {
   return (
     <>
       <div className="px-4 py-12 lg:px-20 xl:px-40" id="contact">
-        <p className="text-center text-yellow-500 font-extrabold mb-4 lg:text-lg">
-          CONTACT US
-        </p>
-        <h2 className="text-center text-2xl lg:text-3xl font-semibold mb-4">
-          Ways To Contact Me
-        </h2>
+        <h3>CONTACT US</h3>
+        <h2>Ways To Contact Me</h2>
         <p className="md:text-center mb-4">
           Ready to start a project together or have any inquiries? Feel free to
           reach out to me! Let&#39;s get in touch and explore how we can bring
@@ -63,9 +58,7 @@ function Contact() {
         </div>
       </div>
       {/* FOOTER */}
-      <div className="border-t-2 border-solid border-yellow-500 text-center p-2 md:p-4 font-bold">
-        &#169; Copyright - JLT | All Rights Reserve
-      </div>
+      <div id="footer">&#169; Copyright - JLT | All Rights Reserve</div>
     </>
   );
 }

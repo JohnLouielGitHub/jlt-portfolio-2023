@@ -124,7 +124,7 @@ function Portfolio() {
   const Project = () => {
     return projects.map((project, key) => {
       return (
-        <div key={key}>
+        <div className="mb-4 last-of-type:mb-0 md:mb-0" key={key}>
           <div className="text-center flex flex-col justify-center items-center">
             <img
               src={
@@ -134,16 +134,9 @@ function Portfolio() {
               alt="project preview"
               className="mb-4 w-full h-60 xl:h-80 object-cover duration-500"
             />
-            <h3 className="mb-4 font-bold">{project.title}</h3>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className=""
-            >
-              <div className="text-yellow-500 font-medium border-solid border-2 border-yellow-500 w-max px-2 hover:bg-yellow-500 hover:text-white hover:scale-125 transition duration-300 ">
-                Visit
-              </div>
+            <h4 className="mb-4 font-bold">{project.title}</h4>
+            <a href={project.link} target="_blank" rel="noreferrer">
+              <div className="visit-button">Visit</div>
             </a>
           </div>
         </div>
@@ -152,10 +145,11 @@ function Portfolio() {
   };
 
   return (
-    <div className="bg-zinc-700 py-12 px-4 lg:px-20 xl:px-40" id="portfolio">
-      <p className="text-center text-yellow-500 font-extrabold mb-4 lg:text-lg">
-        PORTFOLIO
-      </p>
+    <div
+      className="bg-gray-100 dark:bg-zinc-700 py-12 px-4 lg:px-20 xl:px-40"
+      id="portfolio"
+    >
+      <h3>PORTFOLIO</h3>
       <h2 className="text-center text-2xl lg:text-3xl font-semibold my-4">
         MY PROJECT COLLECTION
       </h2>

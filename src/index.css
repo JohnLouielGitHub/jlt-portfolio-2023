@@ -7,11 +7,35 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 text-white;
+  @apply bg-white text-black dark:text-white dark:bg-zinc-900;
 }
 
 .slide-animation {
   @apply h-full brightness-75 object-cover;
   transition-duration: 500ms !important;
   transition-timing-function: linear !important;
+}
+
+.visit-button {
+  @apply bg-black text-white border-black dark:text-yellow-500 font-medium border-solid border-2 dark:border-yellow-500 w-max px-2 dark:hover:bg-yellow-500 hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-125 transition duration-300;
+}
+
+a {
+  @apply text-yellow-300 dark:text-yellow-500 font-medium;
+}
+
+nav a {
+  @apply text-black dark:text-white hover:scale-125;
+}
+
+h2 {
+  @apply text-center text-2xl lg:text-3xl font-semibold mb-4;
+}
+
+h3 {
+  @apply text-center text-yellow-300 dark:text-yellow-500 font-extrabold mb-4 lg:text-lg;
+}
+
+#footer {
+  @apply border-t-2 border-solid border-yellow-300 dark:border-yellow-500 text-center p-2 md:p-4 font-bold;
 }
