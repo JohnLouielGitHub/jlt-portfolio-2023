@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Hero from "./pages/Hero";
 import Portfolio from "./pages/Portfolio";
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Services />
       <Portfolio />
       <Contact />
     </>

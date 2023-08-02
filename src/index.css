@@ -17,7 +17,7 @@ body {
 }
 
 .visit-button {
-  @apply bg-black text-white border-black dark:text-yellow-500 font-medium border-solid border-2 dark:border-yellow-500 w-max px-2 dark:hover:bg-yellow-500 hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-125 transition duration-300;
+  @apply bg-black text-white border-black dark:text-yellow-500 dark:hover:text-white font-medium border-solid border-2 dark:border-yellow-500 w-max px-2 dark:hover:bg-yellow-500 hover:bg-yellow-300 hover:border-yellow-300 hover:text-white hover:scale-125 transition duration-300;
 }
 
 a {

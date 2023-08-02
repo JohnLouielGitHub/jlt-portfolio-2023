@@ -45,7 +45,10 @@ function Contact() {
   };
   return (
     <>
-      <div className="px-4 py-12 lg:px-20 xl:px-40" id="contact">
+      <div
+        className="bg-gray-100 dark:bg-zinc-700 py-12 px-4 lg:px-20 xl:px-40"
+        id="contact"
+      >
         <h3>CONTACT US</h3>
         <h2>Ways To Contact Me</h2>
         <p className="md:text-center mb-4">
@@ -58,7 +61,15 @@ function Contact() {
         </div>
       </div>
       {/* FOOTER */}
-      <div id="footer">&#169; Copyright - JLT | All Rights Reserve</div>
+      <div id="footer">
+        <div>&#169; Copyright - JLT | All Rights Reserve</div>
+        <div>
+          Icons by{" "}
+          <a target="_blank" href="https://icons8.com" rel="noreferrer">
+            Icons8
+          </a>
+        </div>
+      </div>
     </>
   );
 }

@@ -145,10 +145,7 @@ function Portfolio() {
   };
 
   return (
-    <div
-      className="bg-gray-100 dark:bg-zinc-700 py-12 px-4 lg:px-20 xl:px-40"
-      id="portfolio"
-    >
+    <div className="py-12 px-4 lg:px-20 xl:px-40" id="portfolio">
       <h3>PORTFOLIO</h3>
       <h2 className="text-center text-2xl lg:text-3xl font-semibold my-4">
         MY PROJECT COLLECTION
